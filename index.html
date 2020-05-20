@@ -26,53 +26,8 @@
             const network = await web3.eth.net.getNetworkType();
             await window.ethereum.enable();
 
-            var address = "0x894998F3FeCd140B6dcdeD2D0631daF28064bf90";
-            var abi = [
-                {
-                    "inputs": [
-                        {
-                            "internalType": "int256",
-                            "name": "amt",
-                            "type": "int256"
-                        }
-                    ],
-                    "name": "deposit",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "internalType": "int256",
-                            "name": "amt",
-                            "type": "int256"
-                        }
-                    ],
-                    "name": "withdraw",
-                    "outputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [],
-                    "stateMutability": "nonpayable",
-                    "type": "constructor"
-                },
-                {
-                    "inputs": [],
-                    "name": "getBalance",
-                    "outputs": [
-                        {
-                            "internalType": "int256",
-                            "name": "",
-                            "type": "int256"
-                        }
-                    ],
-                    "stateMutability": "view",
-                    "type": "function"
-                }
-            ]
+            var address = "<address>";
+            var abi = []
 
             contract = new web3.eth.Contract(abi, address);
 
